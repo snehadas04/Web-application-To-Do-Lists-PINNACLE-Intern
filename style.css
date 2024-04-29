@@ -38,23 +38,23 @@ body {
 }
 
 section {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
 
 h3 {
 	color: var(--dark);
-	font-size: 1rem;
-	font-weight: 400;
+	font-size: 1.6rem;
+	font-weight: 600;
 	margin-bottom: 0.5rem;
 }
 
 h4 {
 	color: var(--grey);
-	font-size: 0.875rem;
-	font-weight: 700;
+	font-size: 1.3rem;
+	font-weight: 600;
 	margin-bottom: 0.5rem;
 }
 
@@ -70,19 +70,19 @@ h4 {
 
 .greeting .title, 
 .greeting .title input {
-	color: var(--dark);
-	font-size: 1.5rem;
+	color: rgb(43, 103, 42);
+	font-size: 2rem;
 	font-weight: 700;
 }
 
 .create-todo input[type="text"] {
 	display: block;
 	width: 100%;
-	font-size: 1.125rem;
+	font-size: 1.3rem;
 	padding: 1rem 1.5rem;
 	color: var(--dark);
 	background-color: #FFF;
-	border-radius: 0.5rem;
+	border-radius: 1.5rem;
 	box-shadow: var(--shadow);
 	margin-bottom: 1.5rem;
 }
@@ -115,10 +115,10 @@ input[type="checkbox"] {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 20px;
-	height: 20px;
+	width: 22px;
+	height: 22px;
 	border-radius: 999px;
-	border: 2px solid var(--professional);
+	border: 3px solid var(--professional);
 	box-shadow: var(--professional-glow);
 }
 
@@ -152,7 +152,7 @@ input:checked ~ .bubble::after {
 
 .create-todo .options label div {
 	color: var(--dark);
-	font-size: 1.125rem;
+	font-size: 1.2rem;
 	margin-top: 1rem;
 }
 
@@ -182,7 +182,7 @@ input:checked ~ .bubble::after {
 .todo-list .todo-item {
 	display: flex;
 	align-items: center;
-	background-color: #FFF;
+	background-color: #f9fffe;
 	padding: 1rem;
 	border-radius: 0.5rem;
 	box-shadow: var(--shadow);
@@ -201,7 +201,7 @@ input:checked ~ .bubble::after {
 
 .todo-item .todo-content input {
 	color: var(--dark);
-	font-size: 1.125rem;
+	font-size: 1.3rem;
 }
 
 .todo-item .actions {
