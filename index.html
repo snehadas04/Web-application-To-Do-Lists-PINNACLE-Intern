@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Todo List 2022 with LocalStorage</title>
+	<title>To-do List</title>
 	<!-- CSS Import -->
 	<link rel="stylesheet" href="style.css" />
 	<!-- End of CSS Import -->
@@ -27,26 +27,26 @@
 		
 		<!-- New Todo -->
 		<section class="create-todo">
-			<h3>CREATE A TODO</h3>
+			<h3>CREATE YOUR TODO</h3>
 			<form id="new-todo-form">
 				<h4>What's on your todo?</h4>
 				<input 
 					type="text" 
-					placeholder="e.g. "
+					placeholder="e.g. Submit the Assignment."
 					name="content"
 					id="content" />
 				
-				<h4>Pick a category</h4>
+				<h4>Select the category</h4>
 				<div class="options">
-					<label>
-						<input type="radio" name="category" id="category1" value="business" /> 
-						<span class="bubble business"></span>
-						<div>Business</div>
-					</label>
 					<label>
 						<input type="radio" name="category" id="category2" value="personal" />
 						<span class="bubble personal"></span>
 						<div>Personal</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category1" value="professional" /> 
+						<span class="bubble professional"></span>
+						<div>Professional</div>
 					</label>
 				</div>
 

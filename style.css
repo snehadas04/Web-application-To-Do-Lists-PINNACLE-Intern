@@ -1,16 +1,16 @@
 /* Variables */
 :root {
-	--primary: #EA40A4;
-	--business: #3a82ee;
-	--personal: var(--primary);
-	--light: #EEE;
-	--grey: #888;
-	--dark: #313154;
-	--danger: #ff5b57;
+	--primary: #10bc18;
+	--professional: #1d69db;
+	--personal: #fc388d;
+	--light: #faf6c4;
+	--grey: #f5751a;
+	--dark: #7e1f8a;
+	--danger: #ec0905;
 
-	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	--shadow: 0 1px 3px rgba(134, 47, 158, 0.415);
 
-	--business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+	--professional-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
 	--personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
 /* End of Variables */
@@ -118,8 +118,8 @@ input[type="checkbox"] {
 	width: 20px;
 	height: 20px;
 	border-radius: 999px;
-	border: 2px solid var(--business);
-	box-shadow: var(--business-glow);
+	border: 2px solid var(--professional);
+	box-shadow: var(--professional-glow);
 }
 
 .bubble.personal {
@@ -133,8 +133,8 @@ input[type="checkbox"] {
 	opacity: 0;
 	width: 0px;
 	height: 0px;
-	background-color: var(--business);
-	box-shadow: var(--business-glow);
+	background-color: var(--professional);
+	box-shadow: var(--professional-glow);
 	border-radius: 999px;
 	transition: 0.2s ease-in-out;
 }
@@ -227,7 +227,7 @@ input:checked ~ .bubble::after {
 	background-color: var(--primary);
 }
 
-.todo-item .actions .delete {
+.todo-item .actions .remove {
 	background-color: var(--danger);
 }
 

@@ -48,7 +48,7 @@ function DisplayTodos () {
 		const content = document.createElement('div');
 		const actions = document.createElement('div');
 		const edit = document.createElement('button');
-		const deleteButton = document.createElement('button');
+		const removeButton = document.createElement('button');
 
 		input.type = 'checkbox';
 		input.checked = todo.done;
@@ -56,21 +56,21 @@ function DisplayTodos () {
 		if (todo.category == 'personal') {
 			span.classList.add('personal');
 		} else {
-			span.classList.add('business');
+			span.classList.add('professional');
 		}
 		content.classList.add('todo-content');
 		actions.classList.add('actions');
 		edit.classList.add('edit');
-		deleteButton.classList.add('delete');
+		removeButton.classList.add('remove');
 
 		content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
 		edit.innerHTML = 'Edit';
-		deleteButton.innerHTML = 'Delete';
+		removeButton.innerHTML = 'Remove';
 
 		label.appendChild(input);
 		label.appendChild(span);
 		actions.appendChild(edit);
-		actions.appendChild(deleteButton);
+		actions.appendChild(removeButton);
 		todoItem.appendChild(label);
 		todoItem.appendChild(content);
 		todoItem.appendChild(actions);
@@ -108,7 +108,7 @@ function DisplayTodos () {
 			})
 		})
 
-		deleteButton.addEventListener('click', (e) => {
+		removeButton.addEventListener('click', (e) => {
 			todos = todos.filter(t => t != todo);
 			localStorage.setItem('todos', JSON.stringify(todos));
 			DisplayTodos()
